@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "san pham 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
+      "price": 111
+    },
+    {
+      "id": 4,
+      "name": "san pham 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
+      "price": 111
+    },
+    {
+      "id": 3,
+      "name": "san pham 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
+      "price": 111
+    },
+    {
+      "id": 2,
+      "name": "san pham 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
+      "price": 111
+    },
+    {
+      "id": "197c",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVv0X1OiwK4BXsh6RT2w1jXWPS3LoHJ74_Q&s",
+      "price": "1111"
+    }
+  ],
+  "users": [
+    {
+      "id": "0874",
+      "username": "t1",
+      "email": "t1@gmail.com",
+      "password": "12345678",
+      "password2": "12345678"
+    },
+    {
+      "id": "602e",
+      "username": "a1",
+      "email": "a1@gmail.com",
+      "password": "12345678",
+      "password2": "12345678"
+    },
+    {
+      "id": "3373",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVv0X1OiwK4BXsh6RT2w1jXWPS3LoHJ74_Q&s",
+      "price": "1111"
+    },
+    {
+      "id": "b938",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVv0X1OiwK4BXsh6RT2w1jXWPS3LoHJ74_Q&s",
+      "price": "1111"
+    },
+    {
+      "id": "7561",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVv0X1OiwK4BXsh6RT2w1jXWPS3LoHJ74_Q&s",
+      "price": "1111"
+    },
+    {
+      "id": "9908",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwZuszF6bvRcneiFfGD7shCpW9haaGX8o067IG7GVK4klrn_erbIcUcKaACKLDN7fBLs&usqp=CAU",
+      "price": "1111"
+    },
+    {
+      "id": "8d46",
+      "name": "them moi 1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVv0X1OiwK4BXsh6RT2w1jXWPS3LoHJ74_Q&s",
+      "price": "1111"
+    }
+  ]
+}
