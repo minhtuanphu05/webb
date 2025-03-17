@@ -34,7 +34,7 @@ function Edit() {
       const res = await axios.put(`http://localhost:3000/products/${id}`, data);
       if (res.status === 200) {
         alert("Cập nhật sản phẩm thành công!");
-        navigate("/admin/management"); // Điều hướng sau khi sửa xong
+        navigate("/admin/management");
       }
     } catch (error: any) {
       alert(`Lỗi: ${error.message}`);

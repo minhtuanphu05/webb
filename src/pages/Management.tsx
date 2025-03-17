@@ -43,9 +43,7 @@ function Management() {
     <div className="management-container">
       <h1 className="title">📦 Quản lý sản phẩm</h1>
 
-      <Link to="add">
-        <button className="add-button">➕ Thêm sản phẩm</button>
-      </Link>
+      
 
       {loading ? (
         <p className="loading">🔄 Đang tải sản phẩm...</p>
