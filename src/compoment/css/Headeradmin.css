@@ -102,13 +102,17 @@ header{
 }
 .header_3 nav ul{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin:auto;
+    width: 1200px;
 }
 .header_3 nav ul div {
     width: 50px;
     border-radius: 5px;
-
+}
+.header_3 nav ul div img:hover{
+    height: 65px;
 }
 
 .header_3 nav ul div img{
