@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Adminlayout from './layout/Adminlayout'
-import Admin from './pages/Admin'
 import Add from './pages/Add'
 import Edit from './pages/Edit'
 import Register from './pages/Register'
@@ -19,7 +18,6 @@ const conFig = [
     path:"admin",
     element:<Adminlayout/>,
     children:[
-      {path:"", element:<Admin/>},
       {path:"add", element:<Add/>},
       {path:"home", element:<Home/>},
       {path:"management", element:<Management/>},

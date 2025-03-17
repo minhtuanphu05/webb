@@ -19,7 +19,7 @@ function Login() {
 
   const onSubmit: SubmitHandler<ProductInput> = async (data) => {
     try {
-      const res = await axios.get("http://localhost:3001/users");
+      const res = await axios.get("http://localhost:3000/users");
       const checkUser = res.data.find((u: any) => u.username === data.username);
 
       if (!checkUser) {

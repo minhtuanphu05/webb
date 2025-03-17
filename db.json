@@ -1,25 +1,19 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "san pham 1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
       "price": 111
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "san pham 1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
       "price": 111
     },
     {
-      "id": 3,
-      "name": "san pham 1",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
-      "price": 111
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "san pham 1",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZEmebeGoOUvnOHaNskZSQ7hBbFE6hsfgag&s",
       "price": 111

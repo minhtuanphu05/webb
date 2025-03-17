@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./css/Footer.css";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <div style={{backgroundColor:"gray",width:"1200px",height:"100px",marginTop:"10px",borderTop:"1px solid red"}}>
-        <p style={{textAlign:"center",color:"white",lineHeight:"100px"}}>�� 2025 My Website. All rights reserved.</p>
-    </div>
-  )
-}
+    <footer className="footer">
+      <div className="footer-content">
+        <p style={{color:"white"}}>© 2025 My Website. All rights reserved.</p>
+        <nav className="footer-links">
+          
+        </nav>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

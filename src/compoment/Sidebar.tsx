@@ -1,25 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./css/Sidebar.css"; // ✅ Import CSS
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
+  const products = Array(10).fill("Sản phẩm yêu thích");
+
   return (
-    <div style={{width:"250px",height:"500px",borderRight:"1px solid red",backgroundColor:"white",borderRadius:"0px 20px 10px 0px",marginRight:"20px"}}>
-        <h3 style={{color:"violet",fontFamily:"inherit"}}>Top 10 yeu thich</h3>
-        
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        <ul style={{color:"gray",borderBottom:"1px dashed",margin:"0px 10px 0px 10px",marginBottom:"11px"}}><li style={{listStyle:"none",marginRight:"100px"}}>san pham 1</li></ul>
-        
-        
-    </div>
-  )
-}
+    <aside className="sidebar">
+      <h3 className="sidebar-title">🔥 Top 10 yêu thích</h3>
+      <ul className="sidebar-list">
+        {products.map((product, index) => (
+          <li key={index} className="sidebar-item">
+            {product} {index + 1}
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+};
 
-export default Sidebar
+export default Sidebar;

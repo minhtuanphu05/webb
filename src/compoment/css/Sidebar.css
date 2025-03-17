@@ -1,0 +1,37 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 500px;
+    border-right: 2px solid red;
+    background-color: white;
+    border-radius: 0px 20px 10px 0px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+  
+  .sidebar-title {
+    color: violet;
+    font-family: inherit;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Sidebar List */
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-item {
+    color: gray;
+    padding: 8px 10px;
+    border-bottom: 1px dashed #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    color: black;
+    font-weight: bold;
+  }
+  

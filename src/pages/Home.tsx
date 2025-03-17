@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import "./css/Home.css"
+import "./css/Home.css";
 import { Link } from "react-router-dom";
+
 type Product = {
   id: number;
   name: string;
@@ -11,40 +12,38 @@ type Product = {
 
 function Home() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState<boolean>(true); // ✅ Thêm state để quản lý trạng thái loading
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/products`)
+      .get(`http://localhost:3000/products`)
       .then(({ data }) => setProducts(data))
-      .catch(() => alert("Không thể tải sản phẩm!"))
-      .finally(() => setLoading(false)); // ✅ Khi hoàn thành, set loading về false
+      .catch(() => setError("Không thể tải sản phẩm!"))
+      .finally(() => setLoading(false));
   }, []);
 
   return (
-    <div>
-      <h2 style={{ color: "black" }}>Flash Sale</h2>
+    <div className="home-container">
+      <h2 className="title">🔥 Flash Sale 🔥</h2>
 
-     { loading ? ( // ✅ Hiển thị loading khi dữ liệu chưa tải xong
-        <p>Đang tải sản phẩm...</p>
+      {loading ? (
+        <p className="loading">🔄 Đang tải sản phẩm...</p>
+      ) : error ? (
+        <p className="error">{error}</p>
       ) : (
-        
-            <div className="container">
-                {products.map((item) => (
-                    <div key={item.id} className="product-item">
-                    <Link to={`/detail/${item.id}`}> 
-                        <img src={item.image} alt={item.name} />
-                        <h4>{item.name}</h4>
-                        <p>{item.price.toLocaleString()} đ</p>
-                    </Link>
-                    <button>Mua</button>
-                </div>
-                    
-
-                ))}
+        <div className="container">
+          {products.map((item) => (
+            <div key={item.id} className="product-item">
+              <Link to={`/detail/${item.id}`} className="product-link">
+                <img src={item.image} alt={item.name} />
+                <h4>{item.name}</h4>
+                <p>{item.price.toLocaleString()} đ</p>
+              </Link>
+              <button className="buy-button">Mua ngay</button>
             </div>
-        
-
+          ))}
+        </div>
       )}
     </div>
   );
